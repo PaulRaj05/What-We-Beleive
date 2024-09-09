@@ -1,0 +1,305 @@
+/* Reset some default styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+  background: #4a0016; /* Deep Red */
+  color: #efe3d3; /* Light Beige */
+  padding: 0;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #efe3d3; /* Light Beige border */
+}
+
+.single-cta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-cta i {
+  color: #ffe4b5; /* Light Goldenrod for icons */
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-text h4 {
+  color: #efe3d3;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.cta-text h4:hover {
+  color: #ffe4b5; /* Light Goldenrod on hover */
+}
+
+.cta-text span {
+  color: #ffffff; /* Slightly lighter Beige */
+  font-size: 14px;
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.cta-text span:hover {
+  color: #ffffff; /* Light Goldenrod on hover */
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 30px; /* Add vertical gaps between children */
+  padding: 20px; /* Add padding around the content */
+}
+
+/* Center the logo */
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 150px; /* Adjusted size */
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #f5f5f5; /* Slightly lighter Beige */
+  line-height: 1.6;
+  text-align: center;
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.footer-text p:hover {
+  color: #ffe4b5; /* Light Goldenrod on hover */
+}
+
+/* Center the "Follow Us" section */
+.footer-social-icon {
+  margin-top: 20px;
+  text-align: center; /* Center align all content in this section */
+}
+
+.footer-social-icon span {
+  color: #efe3d3;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px; /* Adjust space between text and icons */
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.footer-social-icon span:hover {
+  color: #ffe4b5; /* Light Goldenrod on hover */
+}
+
+.footer-social-icon a {
+  color: #ffffff;
+  font-size: 24px; /* Increased icon size */
+  margin: 0 10px; /* Reduced gap between icons */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center; /* Center icons vertically */
+  justify-content: center; /* Center icons horizontally */
+}
+
+.footer-social-icon a:hover {
+  color: #ffe4b5; /* Light Goldenrod on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.facebook-icon:hover {
+  animation: rotate 0.6s linear;
+}
+
+.youtube-icon:hover {
+  animation: shake 0.6s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.footer-widget {
+  position: relative; /* Ensure that ::before can be positioned absolutely */
+  padding-left: 0; /* Remove any padding that could affect alignment */
+  margin-bottom: 30px; /* Add margin below each widget */
+}
+
+.footer-widget-heading {
+  position: relative; /* Position relative to make sure ::before can be positioned absolutely */
+  padding-left: 0; /* Remove any padding that might affect the position */
+  margin: 0; /* Remove margin to align it correctly */
+}
+
+.footer-widget-heading h3 {
+  position: relative; /* Position relative for pseudo-element alignment */
+  margin: 0; /* Remove margin */
+  padding-left: 0; /* Remove any left padding */
+  color: #efe3d3; /* Color of the heading text */
+  font-size: 22px; /* Font size */
+  font-weight: 600; /* Font weight */
+  line-height: 1.4; /* Line height */
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Align to the left edge of the parent */
+  bottom: -10px; /* Position it below the heading */
+  height: 2px;
+  width: 50px; /* Width of the underline */
+  background: #ffe4b5; /* Light Goldenrod underline */
+}
+
+.footer-widget ul li {
+  display: block; /* Changed to block for better alignment */
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a {
+  color: #ffffff; /* Light Beige for links */
+  text-transform: capitalize;
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.footer-widget ul li a:hover {
+  color: #ffe4b5; /* Light Goldenrod hover effect */
+}
+
+.map-area {
+  padding: 0; /* Remove any padding */
+  background: #5b0a1b; /* Darker Red for contrast */
+  text-align: center;
+  position: relative; /* Make sure the iframe can cover the parent */
+  width: 100%; /* Ensure the container takes up full width */
+  height: 200px; /* Adjusted height to be smaller */
+  margin-top: 30px;
+}
+
+.map-area iframe {
+  border: none;
+  border-radius: 5px;
+  width: 100%; /* Make iframe cover full width */
+  height: 100%; /* Make iframe cover full height */
+  display: block; /* Ensure iframe is a block element to cover container */
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  /* Ensure the icon is above the h4 and span */
+  .single-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .single-cta i {
+    font-size: 24px; /* Adjust size for mobile */
+    margin-bottom: 10px; /* Add margin below the icon */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .cta-text h4,
+  .cta-text span {
+    text-align: center; /* Center-align h4 and span */
+    margin-bottom: 0;
+  }
+
+  .cta-text h4 {
+    font-size: 16px;
+  }
+
+  /* Ensure clear separation between footer sections */
+  .footer-cta .col-md-4 {
+    margin-bottom: 30px; /* Increased gap between sections */
+  }
+
+  /* Center the headings for Useful Links and Location on mobile */
+  .footer-widget .footer-widget-heading h3 {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 20px; /* Ensure space below the heading */
+  }
+
+  /* Center the headings and their pseudo-elements on mobile */
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 50%; /* Center horizontally relative to the container */
+    bottom: -10px; /* Position it below the heading */
+    height: 2px;
+    width: 50px;
+    background: #ffe4b5; /* Light Goldenrod underline */
+    transform: translateX(-50%); /* Center the underline */
+  }
+
+  /* Center the Useful Links and Location lists on mobile */
+  .footer-widget ul {
+    text-align: center; /* Center align text in the list */
+  }
+
+  .footer-widget ul li {
+    display: block; /* Align list items vertically */
+    margin: 10px 0; /* Adjust spacing between list items */
+  }
+
+  .footer-widget ul li a {
+    font-size: 16px; /* Adjust font size for better readability on mobile */
+  }
+
+  /* Specific styling for Find Us, Call Us, Email Us */
+  .footer-widget .find-us,
+  .footer-widget .call-us,
+  .footer-widget .email-us {
+    margin-bottom: 20px; /* Gap between sections */
+    text-align: center; /* Center-align content */
+  }
+}

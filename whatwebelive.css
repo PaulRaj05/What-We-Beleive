@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff; /* Always white color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  cursor: pointer;
+  font-size: 2rem; /* Default font size */
+}
+
+header h1:hover {
+  color: #ffffff; /* Maintain white color on hover */
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#history-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure relative positioning for child alignment */
+}
+
+.image-container {
+  width: 100%; /* Ensure full width */
+  height: 400px; /* Set a fixed height for the container */
+  overflow: hidden; /* Hide any overflowing parts of the image */
+  margin: 0; /* Remove margins */
+  margin-bottom: 1.5rem;
+  position: relative; /* Ensure relative positioning for child alignment */
+}
+
+.image-container img {
+  width: 100%; /* Ensure image covers the full width */
+  height: 100%; /* Ensure image covers the full height */
+  object-fit: cover; /* Cover the container without distorting the image */
+  object-position: top; /* Align image to the top */
+  border: 0; /* Remove the border width */
+  border-radius: 0; /* Remove border radius */
+}
+
+article {
+  margin-bottom: 20px; /* Space below each article */
+}
+
+article h2 {
+  margin-top: 0; /* No margin on top of heading */
+  color: #2196f3; /* Change this to your desired color */
+  font-size: 1.2rem; /* Adjust this value as needed */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+article h2:hover {
+  color: #1976d2; /* Darker shade of blue for hover effect */
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  main {
+    padding: 4px;
+  }
+
+  #history-box {
+    padding: 10px; /* Adjust padding for mobile view */
+    box-shadow: none; /* Remove box-shadow for mobile view */
+    border-radius: 0; /* Remove border-radius for mobile view */
+    border: none; /* Remove border for mobile view if needed */
+  }
+
+  .image-container {
+    height: 200px; /* Reduce height for mobile view */
+    margin-bottom: 1rem; /* Reduce bottom margin */
+  }
+
+  article h2 {
+    font-size: 1rem; /* Adjust font size for mobile view */
+  }
+
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header h1 {
+    font-size: 1.16rem; /* Adjust font size for mobile view */
+  }
+
+  footer {
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  /* Disable hover effect on mobile */
+  @media (hover: none) {
+    article h2:hover {
+      color: #2196f3; /* Maintain the default color on hover */
+    }
+    header h1:hover {
+      color: #ffffff; /* Maintain the default color on hover */
+    }
+  }
+}
